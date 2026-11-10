@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101322">
+  <meta name="description" content="A tender, choice-driven midnight romance at a little city café.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%23111421'/%3E%3Ctext x='20' y='28' text-anchor='middle' font-size='27' fill='%23e7bc8c'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E">
+  <title>After the Last Train — A Midnight Romance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell" id="gameShell">
+    <div class="scene" id="scene" aria-label="A cozy café overlooking a rainy city at night">
+      <div class="skyline"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="window-glow"></div>
+      <div class="rain" aria-hidden="true"></div>
+      <div class="cafe-lamp"><span></span></div>
+      <div class="counter"><div class="cup"><b></b></div></div>
+      <div class="plant"><i></i><i></i><i></i><i></i><b></b></div>
+      <div class="character-wrap" id="characterWrap" aria-hidden="true">
+        <svg class="portrait" viewBox="0 0 360 500" role="img" aria-label="Mika, a young adult with dark hair and a plum cardigan">
+          <defs>
+            <linearGradient id="coat" x2="1" y2="1"><stop stop-color="#9b6681"/><stop offset="1" stop-color="#49364f"/></linearGradient>
+            <linearGradient id="hair" x2=".8" y2="1"><stop stop-color="#252235"/><stop offset="1" stop-color="#594052"/></linearGradient>
+            <linearGradient id="skin" x2=".8" y2="1"><stop stop-color="#f3c9b0"/><stop offset="1" stop-color="#ce9587"/></linearGradient>
+          </defs>
+          <ellipse cx="182" cy="485" rx="154" ry="25" fill="#080b15" opacity=".55"/>
+          <path d="M36 500 Q39 369 106 328 L255 328 Q327 370 334 500Z" fill="url(#coat)"/>
+          <path d="M124 328 L180 394 234 328 252 348 221 500 138 500 107 348Z" fill="#f2e6df"/>
+          <path d="M140 283 Q177 253 218 283 L226 350 Q180 389 132 350Z" fill="url(#skin)"/>
+          <path d="M104 132 Q105 55 184 50 Q266 54 263 153 L251 232 Q249 282 222 307 L232 216 Q237 144 211 116 Q178 87 144 119 Q116 145 124 218 L135 307 Q108 282 107 234Z" fill="url(#hair)"/>
+          <path d="M117 149 Q114 104 146 91 Q185 76 221 102 Q251 122 248 178 L237 240 Q228 270 213 279 L218 208 Q192 188 164 203 Q143 214 132 238 L122 212Z" fill="url(#skin)"/>
+          <path d="M109 177 Q92 112 121 76 Q151 35 210 50 Q270 59 274 122 Q275 153 252 190 L245 135 Q214 106 177 111 Q147 112 125 153 L124 209Z" fill="url(#hair)"/>
+          <path d="M110 111 Q122 38 192 44 Q245 44 270 97 Q237 77 219 82 Q175 56 143 99Z" fill="#30283a"/>
+          <path d="M140 175 Q155 164 170 175" fill="none" stroke="#62434b" stroke-width="4" stroke-linecap="round"/>
+          <path d="M194 175 Q208 165 222 174" fill="none" stroke="#62434b" stroke-width="4" stroke-linecap="round"/>
+          <ellipse cx="157" cy="183" rx="5" ry="7" fill="#463447"/><ellipse cx="208" cy="183" rx="5" ry="7" fill="#463447"/>
+          <path d="M179 187 Q172 211 183 211" fill="none" stroke="#bc817d" stroke-width="3" stroke-linecap="round"/>
+          <path d="M168 230 Q185 241 201 229" fill="none" stroke="#a95e6a" stroke-width="4" stroke-linecap="round"/>
+          <ellipse cx="145" cy="207" rx="15" ry="8" fill="#e98d91" opacity=".25"/><ellipse cx="220" cy="207" rx="15" ry="8" fill="#e98d91" opacity=".25"/>
+          <path d="M105 129 Q86 207 116 278 Q129 305 151 315 Q120 279 131 212Z" fill="#30283a"/>
+          <path d="M252 127 Q281 198 247 278 Q232 307 210 316 Q242 273 231 214Z" fill="#30283a"/>
+          <circle cx="111" cy="215" r="11" fill="url(#skin)"/><circle cx="250" cy="215" r="11" fill="url(#skin)"/>
+          <path d="M148 346 Q181 370 214 346" fill="none" stroke="#f9e9dc" stroke-width="5" opacity=".7"/>
+        </svg>
+        <div class="name-tag">MIKA <span>24 · CAFÉ OWNER</span></div>
+      </div>
+      <div class="scene-vignette"></div>
+    </div>
+
+    <section class="title-screen" id="titleScreen">
+      <div class="title-kicker"><span class="tiny-star">✦</span> A STORY ABOUT TIMING <span class="tiny-star">✦</span></div>
+      <h1>After the<br><em>Last Train</em></h1>
+      <p class="title-sub">One unexpected evening. A hundred little things left unsaid.</p>
+      <button class="primary-btn" id="startBtn">Begin the story <span>↗</span></button>
+      <div class="title-foot"><span>AN INTERACTIVE ROMANCE</span><span>✦</span><span>ALL CHARACTERS 18+</span></div>
+      <button class="continue-link hidden" id="continueBtn">Continue saved story</button>
+    </section>
+
+    <header class="topbar" id="topbar">
+      <a class="brand" href="#" aria-label="After the Last Train home"><span class="brand-mark">✦</span> AFTER THE LAST TRAIN</a>
+      <div class="chapter-label" id="chapterLabel">CHAPTER 01 <span>·</span> THE UNEXPECTED</div>
+      <div class="top-actions"><button class="icon-btn" id="soundBtn" aria-label="Toggle ambient sound" title="Ambient sound">♫</button><button class="icon-btn" id="restartBtn" aria-label="Restart story" title="Restart story">↺</button></div>
+    </header>
+
+    <aside class="affection" id="affection" aria-label="Connection with Mika">
+      <span class="affection-icon">♡</span><span class="affection-label">CONNECTION</span><div class="affection-track"><i id="affectionBar"></i></div>
+    </aside>
+
+    <section class="dialogue" id="dialogue" aria-live="polite">
+      <div class="dialogue-meta"><span class="speaker" id="speaker">MIKA</span><span class="dialogue-dash"></span><span class="location" id="location">THE LITTLE COMET CAFÉ · 11:47 PM</span></div>
+      <p class="dialogue-text" id="dialogueText"></p>
+      <div class="choices" id="choices"></div>
+      <button class="next-btn hidden" id="nextBtn">Continue <span>→</span></button>
+    </section>
+    <div class="toast" id="toast" role="status"></div>
+    <div class="sound-note" id="soundNote">Sound on · best with headphones</div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
